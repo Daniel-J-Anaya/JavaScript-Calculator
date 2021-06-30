@@ -11,10 +11,9 @@ function newItem(){
   }
 
   //crossing out item from list
-  li.on('dblclick', crossOut);
-  function crossOut() {
-    li.classList.toggle('strike');
-  }
+  li.on('dblclick', function crossOut() {
+    li.toggleClass('strike');
+  });
 
   //adding a delete button
   let crossOutButton = $('<span></span>')
